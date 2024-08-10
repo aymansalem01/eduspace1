@@ -1,9 +1,9 @@
-<title>edu space log in</title>
-@extends('layout')
+<title>edu space sign up</title>
+ @extends('layout')
 @section('contant')
 <div class="content">
     <div class="mid-section">
-        <h1> login page <h1> 
+        <h1> sign up page <h1>
     </div>
 </div>
 @endsection

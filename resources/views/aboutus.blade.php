@@ -1,1 +1,9 @@
-<h1> about us <h1>
+<title>edu space aboutus</title>
+@extends('layout')
+@section('contant')
+<div class="content">
+    <div class="mid-section">
+        <h1> about us page <h1>
+    </div>
+</div>
+@endsection
