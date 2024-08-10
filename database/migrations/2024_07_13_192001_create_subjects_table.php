@@ -19,7 +19,6 @@ return new class extends Migration
             // $table->text("bio")->nullable();
             $table->string("video")->nullable();
             $table->string("image")->nullable();
-            
             // $table->string("duration")->nullable();
             $table->timestamps();
         });
