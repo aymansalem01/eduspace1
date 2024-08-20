@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="assest/css/feedback.css">
 </head>
 <body>
-
-
         <!-- Feedback Form Section -->
         <div class="wrapper">
             <form action="" class="form-box feedback">
@@ -30,7 +28,7 @@
                 <button type="submit" class="btn">Submit Feedback</button><!-- Feedback submit button -->
             </form>
         </div>
-        <script src="assest/js/feedback.js"></script>
+        <script src={{asset('assest/js/feedback.js')}}></script>
 
 </body>
 </html>
