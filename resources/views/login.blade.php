@@ -28,7 +28,7 @@
             </div>
             <button type="submit" class="btn">Login</button><!-- Login button -->
             <div class="register-link">
-                <p>Don't have an account? <a href="#" class="register-toggle">Register</a> <!-- Register link --></p>
+                <p>Don't have an account? <a href="/signup" class="register-toggle">Register</a> <!-- Register link --></p>
             </div>
         </form>
 

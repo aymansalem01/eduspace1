@@ -25,7 +25,7 @@
   <!-- Navigation Bar -->
   <nav class="custom-navbar">
     <ul>
-      <li><a href="home.html">Home</a></li> <!-- Link to Home page -->
+      <li><a href="/">Home</a></li> <!-- Link to Home page -->
     </ul>
   </nav>
 
@@ -50,7 +50,7 @@
           <div class="carousel-caption top-0 mt-4"> <!-- Caption for the first slide -->
             <p class="mt-5 fs-3 text-uppercase">Explore the world of chemistry</p>
             <h1 class="display-1 fw-bolder text-capitalize">Chemistry</h1>
-            <a href="video.html" target="_blank" class="btn btn-primary px-4 py-2 fs-5 mt-5">Go to Course</a> <!-- Button to go to the course -->
+            <a href="/video" target="_blank" class="btn btn-primary px-4 py-2 fs-5 mt-5">Go to Course</a> <!-- Button to go to the course -->
           </div>
         </div>
 

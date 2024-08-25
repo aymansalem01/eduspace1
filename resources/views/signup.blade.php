@@ -34,7 +34,7 @@
             </div>
             <button type="submit" class="btn">Register</button><!-- Register button -->
             <div class="login-link">
-                <p>Already have an account? <a href="#" class="login-toggle">Login</a></p> <!-- Login link -->
+                <p>Already have an account? <a href="/login" class="login-toggle">Login</a></p> <!-- Login link -->
             </div>
         </form>
     </div>

@@ -3,86 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduSpace - Course Page</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Boxicons for icons -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assest/css/video.css">
+    <link rel="shortcut Icon" type="x-icon" href="assest/image/logo.png">
+
+    <title>Why Space</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="assest/css/whyspace.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <!-- Header section -->
-        <header class="text-white text-center p-3">
-            <h1>Welcome to EduSpace</h1>
-            <p>Complete the videos to unlock game levels and earn points!</p>
-        </header>
+    <!-- Header section with a background image and overlay for the description -->
+    <header class="hero-section">
+        <div class="overlay">
+            <div class="description">
+                <h1>Why Space?</h1>
+                <p>EduSpace isn’t just about the cosmos; it’s a space for exploration, innovation, and education. 
+                'Space' represents the boundless opportunities we provide to students, from virtual chemistry labs to AI-powered learning tools. 
+                It’s also the space for learners to grow and expand their knowledge. Join us in making education as infinite as the universe.</p>
+            </div>
+        </div>
+    </header>
 
-
-
-
-            <!-- Main content area for videos -->
-            <main class="col-md-9 col-lg-10 p-4">
-                <h2>Course Videos</h2>
-                <!-- Video Grid -->
-                <div class="row g-4 mb-4">
-                    <!-- Video Item 1 -->
-                    <div class="col-md-3">
-                        <div class="video-item" data-video="1">
-                            <img src="#" class="img-fluid" alt="Video 1">
-                            <div class="video-info">
-                                <h5>Video 1 Title</h5>
-                                <p>Short description of the video.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Video Item 2 -->
-                    <div class="col-md-3">
-                        <div class="video-item" data-video="2">
-                            <img src="#" class="img-fluid" alt="Video 2">
-                            <div class="video-info">
-                                <h5>Video 2 Title</h5>
-                                <p>Short description of the video.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Video Item 3 -->
-                    <div class="col-md-3">
-                        <div class="video-item" data-video="3">
-                            <img src="#" class="img-fluid" alt="Video 3">
-                            <div class="video-info">
-                                <h5>Video 3 Title</h5>
-                                <p>Short description of the video.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Video Item 4 -->
-                    <div class="col-md-3">
-                        <div class="video-item" data-video="4">
-                            <img src="#" class="img-fluid" alt="Video 4">
-                            <div class="video-info">
-                                <h5>Video 4 Title</h5>
-                                <p>Short description of the video.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Video player section -->
-                <div id="videoPlayer" class="mt-4">
-                    <video id="video1" class="w-100" controls>
-                        <source src="#" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>A
-                    <p class="text-center mt-2">Now playing: Video 1</p>
-                </div>
-            </main>
+    <!-- Container for the AI section -->
+    <div class="container">
+        <div class="text-section">
+            <h2>Why AI in EduSpace?</h2>
+            <p>AI in EduSpace enhances learning by providing personalized experiences, automating routine tasks, and offering deep insights into educational data, making learning more efficient and impactful.</p>
+        </div>
+        <div class="model-section">
+            <!-- Spline 3D model viewer for AI section -->
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.12/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/iwCKRTN6lyZeTJ6J/scene.splinecode"></spline-viewer>
         </div>
     </div>
-    <!-- Bootstrap 5 JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JavaScript -->
-    <script src="assest/js/video.js"></script>
+
+    <!-- Container for the VR section, with reversed layout -->
+    <div class="container reverse-layout">
+        <div class="text-section">
+            <h2>Why VR in EduSpace?</h2>
+            <p>VR technology in EduSpace allows students to experience immersive, hands-on simulations, bridging the gap between theory and practice, and preparing them for real-world applications.</p>
+        </div>
+        <div class="model-section">
+            <!-- Spline 3D model viewer for VR section -->
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.12/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/0R8bRV2K1uVhthLH/scene.splinecode"></spline-viewer>
+        </div>
+    </div>
+
+    <!-- Container for the Games section -->
+    <div class="container">
+        <div class="text-section">
+            <h2>Why Games in EduSpace?</h2>
+            <p>Games in EduSpace turn learning into an engaging and interactive experience, where students can apply their knowledge in fun and challenging scenarios, motivating them to achieve more.</p>
+        </div>
+        <div class="model-section">
+            <!-- Spline 3D model viewer for Games section -->
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.13/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/gPPbJiiRWOR1xWar/scene.splinecode"></spline-viewer>
+        </div>
+    </div>
 </body>
 </html>

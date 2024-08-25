@@ -35,15 +35,15 @@
             <p>AI Student</p>
             <div class="icons">
 
-              <a href="#" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/tala-wassas-154990304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn">
                 <i class="fab fa-linkedin"></i>
               </a>
               <a href="#" aria-label="GitHub">
                 <i class="fab fa-github"></i>
               </a>
-              <a href="#" aria-label="Email">
+              {{-- <a href="#" aria-label="Email">
                 <i class="fas fa-envelope"></i>
-              </a>
+              </a> --}}
             </div>
           </div>
         </div>
@@ -58,15 +58,15 @@
             <p>SE student</p>
             <div class="icons">
 
-              <a href="#" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/lujain-samara-0324692bb/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn">
                 <i class="fab fa-linkedin"></i>
               </a>
-              <a href="#" aria-label="GitHub">
+              <a href="https://github.com/lujain03" aria-label="GitHub">
                 <i class="fab fa-github"></i>
               </a>
-              <a href="#" aria-label="Email">
+              {{-- <a href="#" aria-label="Email">
                 <i class="fas fa-envelope"></i>
-              </a>
+              </a> --}}
             </div>
           </div>
         </div>
@@ -80,15 +80,15 @@
             <p>CE Graduate</p>
             <div class="icons">
 
-              <a href="#" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/ayman-aburumman-549931262" aria-label="LinkedIn">
                 <i class="fab fa-linkedin"></i>
               </a>
-              <a href="#" aria-label="GitHub">
+              <a href="https://github.com/aymansalem01" aria-label="GitHub">
                 <i class="fab fa-github"></i>
               </a>
-              <a href="#" aria-label="Email">
+              {{-- <a href="#" aria-label="Email">
                 <i class="fas fa-envelope"></i>
-              </a>
+              </a> --}}
             </div>
           </div>
         </div>
@@ -108,9 +108,9 @@
       <a href="#" aria-label="GitHub">
         <i class="fab fa-github"></i>
       </a>
-      <a href="batoulennab17@gmail.com" aria-label="Email">
+      {{-- <a href="batoulennab17@gmail.com" aria-label="Email">
         <i class="fas fa-envelope"></i>
-      </a>
+      </a> --}}
     </div>
   </div>
 </div>
@@ -128,6 +128,9 @@
 
               <a href="https://www.linkedin.com/in/rahaf-yasien-b022372b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn">
                 <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/Rayx23x" aria-label="GitHub">
+                <i class="fab fa-github"></i>
               </a>
 
             </div>

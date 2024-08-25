@@ -39,20 +39,20 @@
             <img src="assest/image/logo.png" alt="Logo" />
         </a>
         <nav>
-            <a href="home.html" class="active">Home</a>
+            <a href="/" class="active">Home</a>
             <div class="dropdown">
                 <a href="#" class="dropbtn">About</a>
                 <div class="dropdown-content">
-                    <a href="whyspace.html" >Why EduSpace</a>
-                    <a href="team.html" >Team</a>
-                    <a href="price.html" target="_blank">Prices</a>
+                    <a href="/whyspace" >Why EduSpace</a>
+                    <a href="/team" >Team</a>
+                    <a href="/price" target="_blank">Prices</a>
 
                 </div>
             </div>
-            <a href="course.html" >Courses</a>
-            <a href="feedback.html" target="_blank">Feedback</a>
-            <a href="profilepage.html" >Profile</a>
-            <a href="login.html" class="btn">Log In</a>
+            <a href="/course" >Courses</a>
+            <a href="/feedback" target="_blank">Feedback</a>
+            <a href="/profile" >Profile</a>
+            <a href="/login" class="btn">Log In</a>
         </nav>
     </header>
 
@@ -112,9 +112,9 @@
                     <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="">News</a></li>
-                        <li><a href="whyspace.html">About</a></li>
+                        <li><a href="/whyspace">About</a></li>
                         <li><a href="">Contact Us</a></li>
-                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="/team">Our Team</a></li>
                     </ul>
                 </div>
 
