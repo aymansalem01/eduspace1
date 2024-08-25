@@ -38,7 +38,7 @@
               <a href="https://www.linkedin.com/in/tala-wassas-154990304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn">
                 <i class="fab fa-linkedin"></i>
               </a>
-              <a href="#" aria-label="GitHub">
+              <a href="https://github.com/Talatoto" aria-label="GitHub">
                 <i class="fab fa-github"></i>
               </a>
               {{-- <a href="#" aria-label="Email">

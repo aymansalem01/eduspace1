@@ -85,6 +85,8 @@ h1 {
   min-width: 180px;
   margin: auto;
   display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
   justify-content: space-between;
 }
 
@@ -118,7 +120,7 @@ h1 {
     padding: 1em;
   }
   .card {
-    padding: 5em 1em;
+    padding: 1em 1em;
   }
   .column {
     flex: 0 0 20%; /* Adjusted for 5 columns */
