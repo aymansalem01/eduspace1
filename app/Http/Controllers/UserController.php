@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Foundation\Auth\User;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -12,7 +15,7 @@ class UserController extends Controller
      */
     public function index()
     {
-      return view('/users.index');
+    //   return view('/users.index');
     }
 
     /**
@@ -20,7 +23,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('/users.create');
+        return view('signup');
     }
 
     /**
@@ -28,7 +31,21 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user =new user();
+       $user->name= $request->input('Username');
+       $user->email= $request->input('Email');
+       if(hash::make($request->input('password'))==hash::make($request->input('confirm_password'))){
+       $user->password= Hash::make($request->input('password'));
+       }
+       else{
+        return back()->withErrors([
+            'password' => 'password not match.',
+        ]);
+
+       }
+    //    $user->password= $request->input('password');
+       $user->save();
+       return redirect()->route('login');
     }
 
     /**
@@ -61,5 +78,24 @@ class UserController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+    public function login(Request $request){
+        $request->validate([
+            'email'=>'required|string|exists:users,name',
+            'password'=>'required|min:8',
+        ]);
+        $user=User::where('name',$request->user_name)->first();
+        if(Hash::check($request->password, $user->password)){
+        Auth::login($user);
+        $user->createToken($user->name)->plainTextToken;
+        return redirect()->route('home');
+    }  return back()->withErrors([
+        'email' => 'The provided credentials do not match our records.',
+    ]);
+}
+    public function logout(){
+        $user=Auth::user();
+        $user->tokens()->delete();
+        return redirect()->route('login');
     }
 }

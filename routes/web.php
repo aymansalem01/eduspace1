@@ -9,7 +9,7 @@ use App\Http\Controllers\UserController;
 Route::get('/',[PageController::class,'index'])->name('home');
 Route::get('/course',[PageController::class,'course'])->name('course');
 Route::get('/feedback',[PageController::class,'feedback'])->name('feedback');
-Route::get('/login',[PageController::class,'login']);
+Route::get('/login',[PageController::class,'login'])->name('login');
 Route::get('/price',[PageController::class,'price'])->name('price');
 Route::get('/profile',[PageController::class,'profilepage'])->name('profilepage');
 Route::get('/signup',[PageController::class,'signup'])->name('signup');

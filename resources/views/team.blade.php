@@ -105,7 +105,7 @@
       <a href="https://www.linkedin.com/in/batoul-ennab-88b4a4289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" aria-label="LinkedIn">
         <i class="fab fa-linkedin"></i>
       </a>
-      <a href="#" aria-label="GitHub">
+      <a href="https://github.com/Mustafa-Ananbeh" aria-label="GitHub">
         <i class="fab fa-github"></i>
       </a>
       {{-- <a href="batoulennab17@gmail.com" aria-label="Email">
