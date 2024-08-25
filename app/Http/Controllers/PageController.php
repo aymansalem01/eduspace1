@@ -21,7 +21,7 @@ class PageController extends Controller
   public function price(){
     return view('price');
   }
-  public function profile(){
+  public function profilepage(){
     return view('profilepage');
   }
   public function signup(){

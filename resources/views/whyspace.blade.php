@@ -14,7 +14,7 @@
     <header class="hero-section">
         <div class="overlay">
             <div class="description">
-                <h1>Why Space?</h1>
+                <h1>Why EduSpace?</h1>
                 <p>EduSpace isn’t just about the cosmos; it’s a space for exploration, innovation, and education. 
                 'Space' represents the boundless opportunities we provide to students, from virtual chemistry labs to AI-powered learning tools. 
                 It’s also the space for learners to grow and expand their knowledge. Join us in making education as infinite as the universe.</p>

@@ -35,7 +35,7 @@
    <!-- Navbar Section -->
    <header>
 
-        <a href="home.html" class="logo">
+        <a href="/whyspace" class="logo">
             <img src="assest/image/logo.png" alt="Logo" />
         </a>
         <nav>
@@ -63,7 +63,7 @@
             <h1>Hi we're <span>EduSpace</span></h1>
             <h3 class="typing-text">Created With <span></span></h3>
             <p>Explore Chemistry, Physics, Biology, and more with cutting-edge simulations, VR labs, and AI assistance.</p>
-            <a href="course.html" class="btn">Get Started</a>
+            <a href="/course" class="btn">Get Started</a>
         </div>
         <div class="spline-container">
             <spline-viewer url="https://prod.spline.design/k8juEQ11TwGW10oA/scene.splinecode"></spline-viewer>
