@@ -45,12 +45,12 @@
                 <div class="dropdown-content">
                     <a href="/whyspace" >Why EduSpace</a>
                     <a href="/team" >Team</a>
-                    <a href="/price" target="_blank">Prices</a>
+                    <a href="/price">Prices</a>
 
                 </div>
             </div>
             <a href="/course" >Courses</a>
-            <a href="/feedback" target="_blank">Feedback</a>
+            <a href="/feedback" >Feedback</a>
             <a href="/profile" >Profile</a>
             <a href="/login" class="btn">Log In</a>
         </nav>

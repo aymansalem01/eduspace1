@@ -6,6 +6,7 @@
 <title>EduSpace Login</title>
 <link rel="stylesheet" href="assest/css/login.css"><!-- Linking the CSS file -->
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="shortcut icon" type="x-icon" href="assest/image/logo.png">
 
 </head>
 <body>

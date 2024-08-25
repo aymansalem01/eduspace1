@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
     <link rel="stylesheet" href="assest/css/feedback.css">
+    <link rel="shortcut icon" type="x-icon" href="assest/image/logo.png">
 </head>
 <body>
         <!-- Feedback Form Section -->

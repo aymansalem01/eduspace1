@@ -3,7 +3,8 @@
 <head>
   <!-- Metadata for character set, compatibility, and responsive design -->
   <meta charset="UTF-8">
-  <link rel="shortcut Icon" type="x-icon" href={{"asset('assest/image/logo.png')"}}>
+  {{-- <link rel="shortcut Icon" type="x-icon" href= "asset('assest/image/logo.png')"> --}}
+  <link rel="shortcut icon" type="x-icon" href="assest/image/logo.png">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
