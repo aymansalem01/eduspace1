@@ -31,10 +31,11 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+        dd($request?->email);
         $user =new user();
        $user->name= $request->input('Username');
        $user->email= $request->input('Email');
-       if(hash::make($request->input('password'))==hash::make($request->input('confirm_password'))){
+       if($request->input('password')==$request->input('confirm_password')){
        $user->password= Hash::make($request->input('password'));
        }
        else{
@@ -80,11 +81,12 @@ class UserController extends Controller
         //
     }
     public function login(Request $request){
+        dd('test');
         $request->validate([
-            'email'=>'required|string|exists:users,name',
+            'email'=>'required|string|exists:users',
             'password'=>'required|min:8',
         ]);
-        $user=User::where('name',$request->user_name)->first();
+        $user=User::where('name',$request->email)->first();
         if(Hash::check($request->password, $user->password)){
         Auth::login($user);
         $user->createToken($user->name)->plainTextToken;

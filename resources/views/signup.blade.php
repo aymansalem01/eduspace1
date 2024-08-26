@@ -10,27 +10,29 @@
 </head>
 <body>
     <div class="wrapper">
-        <form action="" class="form-box register">
+        <form action={{url("store")}} method="post" class="form-box register">
+            @CSRF
             <h1>Register</h1> <!-- Main heading for the register form -->
             <p class="f">Join us today! Please create your account.</p>
 
             <div class="input-row"> <!-- Flexbox container for username and email -->
                 <div class="input-box">
-                    <input type="text" placeholder="Username" required>
+                    <input type="text" name="Username"  placeholder="Username" required>
                     <i class='bx bxs-user'></i><!-- Icon for username -->
                 </div>
                 <div class="input-box">
-                    <input type="email" placeholder="Email" required>
+                    <label for="email"></label><br>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
                     <i class='bx bxs-envelope'></i><!-- Icon for email -->
                 </div>
             </div>
 
             <div class="input-box">
-                <input type="password" placeholder="Password" required>
+                <input type="password" name="password" placeholder="Password" required>
                 <i class='bx bxs-lock-alt'></i><!-- Icon for password -->
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Confirm Password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
                 <i class='bx bxs-lock-alt'></i><!-- Icon for confirm password -->
             </div>
             <button type="submit" class="btn">Register</button><!-- Register button -->

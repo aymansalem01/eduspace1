@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="x-icon" href="assest/image/logo.png">
@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="assest/css/home.css">
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.5/build/spline-viewer.js"></script>
 </head>
-<body>
+<body dir="rtl">
     <div id="chatbot-launcher">
         <img src="assest/image/bot2.png" alt="Chat" id="chatbot-icon">
-        <span id="chatbot-label">Chat with neptune</span>
+        <span id="chatbot-label">تحدث مع نبتون</span>
 
     </div>
 
     <div id="chatbot-container">
         <div id="chatbot-header">
-            <h2>Chat with neptune</h2>
+            <h2>تحدث مع نبتون</h2>
             <button id="chatbot-close">&times;</button>
         </div>
         <div id="chatbot-messages">
@@ -26,7 +26,7 @@
         </div>
         <div id="chatbot-input">
             <input type="text" id="chatbot-text" placeholder="Type a message...">
-            <button id="chatbot-send">Send</button>
+            <button id="chatbot-send">ارسال</button>
         </div>
     </div>
 
@@ -39,33 +39,31 @@
             <img src="assest/image/logo.png" alt="Logo" />
         </a>
         <nav>
-            <a href="/" class="active">Home</a>
+            <a href="/ar" class="active">الرئيسية</a>
             <div class="dropdown">
-                <a href="#" class="dropbtn">About</a>
+                <a href="#" class="dropbtn">عنا</a>
                 <div class="dropdown-content">
-                    <a href="/whyspace" >Why EduSpace</a>
-                    <a href="/team" >Team</a>
-
+                    <a href="/ar/whyspace" >لماذا نحن</a>
+                    <a href="/ar/team" >الفريق</a>
 
                 </div>
             </div>
-            <a href="/course" >Courses</a>
-            <a href="/feedback" >Feedback</a>
+            <a href="/ar/course" >كورساتنا</a>
+            <a href="/ar/feedback" >اقتراحات</a>
             {{-- <a href="/profile" >Profile</a> --}}
-            <a href="/ar">عربي</a>
+            <a href="/" >English</a>
             <a href="/login" class="btn">Log In</a>
-
         </nav>
     </header>
 
 
     <!-- Solar System Content -->
-    <section class="home">
+    <section class="home" dir="rtl">
         <div class="home-content">
-            <h1>Hi we're <span>EduSpace</span></h1>
-            <h3 class="typing-text">Created With <span></span></h3>
-            <p>Explore Chemistry, Physics, Biology, and more with cutting-edge simulations, VR labs, and AI assistance.</p>
-            <a href="/course" class="btn">Get Started</a>
+            <h1>نحن<span>EduSpace</span></h1>
+            <h3 class="typing-text">صنع باستخدام<span></span></h3>
+            <p>استكشف الكيمياء، الفيزياء، الأحياء والمزيد مع محاكاة متطورة، مختبرات الواقع الافتراضي، ومساعدة الذكاء الاصطناعي</p>
+            <a href="/course" class="btn">ابدأ</a>
         </div>
         <div class="spline-container">
             <spline-viewer url="https://prod.spline.design/k8juEQ11TwGW10oA/scene.splinecode"></spline-viewer>
@@ -79,18 +77,18 @@
         <div class="features-content">
             <!-- First Feature Card -->
             <div class="feature-card">
-                <h3>Personalized Learning</h3>
-                <p>Tailored learning experiences and AI guidance to boost academic achievement.</p>
+                <h3>تعليم مخصص</h3>
+                <p>تجارب تعلم مخصصة وإرشادات الذكاء الاصطناعي لتعزيز التفوق الأكاديمي</p>
             </div>
             <!-- Second Feature Card -->
             <div class="feature-card">
-                <h3>Scalable Learning Environments</h3>
-                <p>Create safe and scalable learning environments to support students' academic growth.</p>
+                <h3>بيئات تعلم قابلة للتوسع.</h3>
+                <p>أنشئ بيئات تعلم آمنة وقابلة للتوسع لدعم النمو الأكاديمي للطلاب.</p>
             </div>
             <!-- Third Feature Card -->
             <div class="feature-card">
-                <h3>Improved Engagement</h3>
-                <p>Increase student engagement and motivation through immersive and gamified learning experiences.</p>
+                <h3>تحسين التفاعل</h3>
+                <p>زيادة تفاعل الطلاب وتحفيزهم من خلال تجارب تعلم غامرة ومحفزة بالألعاب.</p>
             </div>
         </div>
 
@@ -100,8 +98,8 @@
         <iframe src="https://www.youtube.com/embed/KLOcj5qvOio" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="text-container">
-        <h2>Watch Our Promo Video</h2>
-        <p>This video showcases the exciting features and capabilities of EduSpace, including our cutting-edge VR labs, interactive simulations, and more. Dive in to see how we bring education to life!</p>
+        <h2>شاهد فيديو العرض الترويجي الخاص بنا.</h2>
+        <p>يُبرز هذا الفيديو الميزات والإمكانيات المثيرة لـ EduSpace، بما في ذلك مختبرات الواقع الافتراضي المتطورة، والمحاكاة التفاعلية، والمزيد. انغمس في التجربة لترى كيف نجعل التعليم ينبض بالحياة!</p>
     </div>
 </section>
 
@@ -112,9 +110,8 @@
             <footer>
                 <div class="footerNav">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">News</a></li>
-                        <li><a href="/whyspace">About</a></li>
+                        <li><a href="ar">الرئيسية</a></li>
+                        <li><a href="/whyspace">عنا</a></li>
                         <li><a href="">Contact Us</a></li>
                         <li><a href="/team">Our Team</a></li>
                     </ul>
@@ -122,10 +119,10 @@
 
                 <!-- Email Subscription Box -->
                 <div class="emailSubscription">
-                    <h4>enter your Email so we could get in touch with you</h4>
+                    <h4>أدخل بريدك الإلكتروني حتى نتمكن من التواصل معك.</h4>
                     <form action="#" method="post">
                         <input type="email" name="email" placeholder="Enter your email" required>
-                        <button type="submit">Subscribe</button>
+                        <button type="submit">اشترك</button>
                     </form>
                 </div>
                 <div class="divider"></div>
