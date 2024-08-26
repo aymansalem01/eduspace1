@@ -49,9 +49,9 @@
         <div class="carousel-item active c-item">
           <img src={{asset("assest/image/chemistrycourse.jpg" )}} class="d-block w-100 c-img" alt="Chemistry"> <!-- Slide image -->
           <div class="carousel-caption top-0 mt-4"> <!-- Caption for the first slide -->
-            <p class="mt-5 fs-3 text-uppercase">Explore the world of chemistry</p>
-            <h1 class="display-1 fw-bolder text-capitalize">Chemistry</h1>
-            <a href="/video" target="_blank" class="btn btn-primary px-4 py-2 fs-5 mt-5">Go to Course</a> <!-- Button to go to the course -->
+            <p class="mt-5 fs-3 text-uppercase">اسكتشف عالم الكيمياء</p>
+            <h1 class="display-1 fw-bolder text-capitalize">الكيمياء</h1>
+            <a href="/video" target="_blank" class="btn btn-primary px-4 py-2 fs-5 mt-5">أبدأ</a> <!-- Button to go to the course -->
           </div>
         </div>
 
@@ -59,9 +59,9 @@
         <div class="carousel-item c-item">
           <img src={{asset("assest/image/physicscourse.jpg")}} class="d-block w-100 c-img" alt="Physics"> <!-- Slide image -->
           <div class="carousel-caption top-0 mt-4"> <!-- Caption for the second slide -->
-            <p class="text-uppercase fs-3 mt-5">Uncover the laws of physics</p>
-            <p class="display-1 fw-bolder text-capitalize">Physics</p>
-            <p class="fs-5 mt-5">Coming Soon</p> <!-- Updated to Coming Soon -->
+            <p class="text-uppercase fs-3 mt-5">استكشف قوانين الفيزياء</p>
+            <p class="display-1 fw-bolder text-capitalize">الفيزياء</p>
+            <p class="fs-5 mt-5">قريبا</p> <!-- Updated to Coming Soon -->
           </div>
         </div>
 
@@ -69,9 +69,9 @@
         <div class="carousel-item c-item">
           <img src={{asset("assest/image/biocourse.jpg" )}} class="d-block w-100 c-img" alt="Biology"> <!-- Slide image -->
           <div class="carousel-caption top-0 mt-4"> <!-- Caption for the third slide -->
-            <p class="text-uppercase fs-3 mt-5">Discover the wonders of biology</p>
-            <p class="display-1 fw-bolder text-capitalize">Biology</p>
-            <p class="fs-5 mt-5">Coming Soon</p> <!-- Updated to Coming Soon -->
+            <p class="text-uppercase fs-3 mt-5">استكشف عجائب علم الأحياء</p>
+            <p class="display-1 fw-bolder text-capitalize">الاحياء</p>
+            <p class="fs-5 mt-5">قريبا</p> <!-- Updated to Coming Soon -->
           </div>
         </div>
       </div>
@@ -93,8 +93,8 @@
   <!-- Professional Description Section -->
   <section class="description text-center py-5">
     <div class="container">
-      <h2 class="display-4 text-light mb-4">Empowering Education through Innovation</h2> <!-- Section title -->
-      <p class="text-light fs-5">At EduSpace, we are dedicated to transforming learning experiences with cutting-edge technology. Our platform offers immersive games, engaging 2D learning activities, and advanced VR labs, all designed to make education more interactive and accessible.</p> <!-- Section description -->
+      <h2 class="display-4 text-light mb-4">تمكين التعليم من خلال الابتكار</h2> <!-- Section title -->
+      <p class="text-light fs-5">في EduSpace، نحن ملتزمون بتحويل تجارب التعلم باستخدام التكنولوجيا المتطورة. توفر منصتنا ألعابًا غامرة، وأنشطة تعليمية ثنائية الأبعاد، ومختبرات الواقع الافتراضي المتقدمة، وكلها مصممة لجعل التعليم أكثر تفاعلية ويمكن الوصول إليه.</p> <!-- Section description -->
     </div>
   </section>
 </body>

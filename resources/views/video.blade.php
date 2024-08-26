@@ -27,9 +27,9 @@
                         <i class="fas fa-trophy"></i>
                         <a href="#">Games</a>
                         <ul class="dropdown">
-                            <li><a href="#">Level(1)</a></li>
-                            <li><a href="#">Level(2)</a></li>
-                            <li><a href="#">Level(3)</a></li>
+                            <li><a href="https://learn-2b.github.io/Electron-Distribution-Game/">Level(1)</a></li>
+                            <li><a href="https://learn-2b.github.io/Electron--Configuration/">Level(2)</a></li>
+                            <li><a href="https://learn-2b.github.io/GuessAtom/">Level(3)</a></li>
                         </ul>
                     </li>
                 </ul>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut Icon" type="x-icon" href="assest/image/logo.png">
+    <link rel="shortcut Icon" type="x-icon" href={{ asset("assest/image/logo.png") }}>
 
     <title>Why Space</title>
     <!-- Link to the external stylesheet -->
@@ -14,10 +14,10 @@
     <header class="hero-section">
         <div class="overlay">
             <div class="description">
-                <h1>Why EduSpace?</h1>
-                <p>EduSpace isn’t just about the cosmos; it’s a space for exploration, innovation, and education.
-                'Space' represents the boundless opportunities we provide to students, from virtual chemistry labs to AI-powered learning tools.
-                It’s also the space for learners to grow and expand their knowledge. Join us in making education as infinite as the universe.</p>
+                <h1>لماذا EduSpace?</h1>
+                <p>لا يقتصر اهتمام EduSpace على الكون فحسب؛ إنها مساحة للاستكشاف والابتكار والتعليم.
+                    يمثل "الفضاء" الفرص اللامحدودة التي نقدمها للطلاب، بدءًا من مختبرات الكيمياء الافتراضية وحتى أدوات التعلم التي تعمل بالذكاء الاصطناعي.
+                    إنها أيضًا مساحة للمتعلمين لتنمية وتوسيع معارفهم. انضم إلينا في جعل التعليم لانهائيًا مثل الكون.</p>
             </div>
         </div>
     </header>
@@ -25,8 +25,8 @@
     <!-- Container for the AI section -->
     <div class="container" dir="rtl">
         <div class="text-section">
-            <h2>Why AI in EduSpace?</h2>
-            <p>AI in EduSpace enhances learning by providing personalized experiences, automating routine tasks, and offering deep insights into educational data, making learning more efficient and impactful.</p>
+            <h2>لماذا الذكاء الاصطناعي في EduSpace؟</h2>
+            <p>يعمل الذكاء الاصطناعي في EduSpace على تحسين التعلم من خلال توفير تجارب مخصصة، وأتمتة المهام الروتينية، وتقديم رؤى عميقة حول البيانات التعليمية، مما يجعل التعلم أكثر كفاءة وتأثيرًا.</p>
         </div>
         <div class="model-section">
             <!-- Spline 3D model viewer for AI section -->
@@ -38,8 +38,8 @@
     <!-- Container for the VR section, with reversed layout -->
     <div class="container reverse-layout">
         <div class="text-section">
-            <h2>Why VR in EduSpace?</h2>
-            <p>VR technology in EduSpace allows students to experience immersive, hands-on simulations, bridging the gap between theory and practice, and preparing them for real-world applications.</p>
+            <h2>لماذا الواقع الافتراضي في EduSpace؟</h2>
+            <p>تتيح تقنية الواقع الافتراضي في EduSpace للطلاب تجربة عمليات محاكاة غامرة وعملية، وسد الفجوة بين النظرية والتطبيق، وإعدادهم لتطبيقات العالم الحقيقي.</p>
         </div>
         <div class="model-section">
             <!-- Spline 3D model viewer for VR section -->
@@ -51,8 +51,8 @@
     <!-- Container for the Games section -->
     <div class="container">
         <div class="text-section">
-            <h2>Why Games in EduSpace?</h2>
-            <p>Games in EduSpace turn learning into an engaging and interactive experience, where students can apply their knowledge in fun and challenging scenarios, motivating them to achieve more.</p>
+            <h2>لماذا الألعاب في EduSpace؟</h2>
+            <p>تعمل الألعاب في EduSpace على تحويل التعلم إلى تجربة جذابة وتفاعلية، حيث يمكن للطلاب تطبيق معرفتهم في سيناريوهات ممتعة ومليئة بالتحديات، مما يحفزهم على تحقيق المزيد.</p>
         </div>
         <div class="model-section">
             <!-- Spline 3D model viewer for Games section -->
