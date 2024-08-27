@@ -11,7 +11,8 @@
 </head>
 <body>
     <div class="wrapper">
-        <form action="" class="form-box login"></form>
+        <form action={{url("login")}} method="post" class="form-box login">
+        @csrf
             <h1>Login</h1> <!-- Main heading for the login form -->
             <p class="f">Welcome back! Please log in to your account.</p>
 
@@ -27,7 +28,8 @@
                 <label><input type="checkbox"> Remember me</label><!-- Checkbox for remember me -->
                 <a href="#">Forgot Password?</a><!-- Forgot password link -->
             </div>
-            <button type="submit" class="btn">Login</button><!-- Login button -->
+            <button type="submit" class="btn">login</button><!-- Login button -->
+
             <div class="register-link">
                 <p>Don't have an account? <a href="/signup" class="register-toggle">Register</a> <!-- Register link --></p>
             </div>

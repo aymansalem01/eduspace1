@@ -31,10 +31,9 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request?->email);
-        $user =new user();
+       $user =new user();
        $user->name= $request->input('Username');
-       $user->email= $request->input('Email');
+       $user->email= $request->input('email');
        if($request->input('password')==$request->input('confirm_password')){
        $user->password= Hash::make($request->input('password'));
        }
@@ -81,19 +80,23 @@ class UserController extends Controller
         //
     }
     public function login(Request $request){
-        dd('test');
+        
         $request->validate([
-            'email'=>'required|string|exists:users',
-            'password'=>'required|min:8',
+            'email' => 'required|email|exists:users,email',
+            'password' => 'required|string|min:8'
         ]);
-        $user=User::where('name',$request->email)->first();
-        if(Hash::check($request->password, $user->password)){
-        Auth::login($user);
-        $user->createToken($user->name)->plainTextToken;
-        return redirect()->route('home');
-    }  return back()->withErrors([
-        'email' => 'The provided credentials do not match our records.',
-    ]);
+        dd("test");
+        $user = User::where('email', $request->email)->first();
+        
+        if ($user && Hash::check($request->password, $user->password)) {
+            Auth::login($user);
+            $user->createToken($user->name)->plainTextToken;
+            return redirect()->route('home');
+        } 
+        return back()->withErrors([
+            'email' => 'The provided credentials do not match our records.',
+        ]);
+        
 }
     public function logout(){
         $user=Auth::user();
