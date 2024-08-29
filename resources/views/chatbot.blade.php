@@ -9,12 +9,13 @@
         <h2>Chat with neptune</h2>
         <button id="chatbot-close">&times;</button>
     </div>
-    <div id="chatbot-messages">
-        <!-- Chat messages will be dynamically added here -->
-    </div>
+    
     <div id="chatbot-input">
-        <input type="text" id="chatbot-text" placeholder="Type a message...">
-        <button id="chatbot-send">Send</button>
+        <input type="text" id="text" name="text" placeholder="Type a message...">
+        <button onclick="generateResponse();" id="chatbot-send">Send</button>
+    </div>
+    <div id="response">
+        <!-- Chat messages will be dynamically added here -->
     </div>
 </div>
 <script src="assest/js/bot.js"></script>

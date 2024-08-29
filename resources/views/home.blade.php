@@ -5,6 +5,7 @@
     <link rel="shortcut icon" type="x-icon" href="assest/image/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduSpace</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link rel="stylesheet" href="{{asset('assest/css/home.css')}}">
     <script type="module" src="{{asset('https://unpkg.com/@splinetool/viewer@1.9.5/build/spline-viewer.js')}}"></script>
