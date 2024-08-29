@@ -2,9 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 //use app\http\Controllers\PageControler;
+use App\Http\Controllers\ChatController;
 use App\Http\Controllers\PageController;
-use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\SubjectController;
 
 Route::get('/',[PageController::class,'index'])->name('home');
 Route::get('/course',[PageController::class,'course'])->name('course');
@@ -25,3 +26,4 @@ Route::get('/ar/whyspace',[PageController::class,'whySpaceAr'])->name('whySpaceA
 Route::get('/ar/team',[PageController::class,'teamAr'])->name('teamAr');
 Route::get('ar/course',[PageController::class,'courseAr'])->name('courseAr');
 Route::get('/ar/feedback',[PageController::class,'feedbackAr'])->name('feedbackAr');
+Route::post('/chat', [ChatController::class, 'handleMessage']);

@@ -18,3 +18,23 @@
     </div>
 </div>
 <script src="assest/js/bot.js"></script>
+<script>
+    function generateResponse() {
+        var text = document.getElementById("text").value;
+        var response = document.getElementById("response");
+
+        fetch("/chat", { // Update with the correct route
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content') // CSRF token
+            },
+            body: JSON.stringify({ text: text }),
+        })
+        .then(res => res.text())
+        .then(res => {
+            response.innerHTML = res;
+        })
+        .catch(error => console.error('Error:', error));
+    }
+</script>
