@@ -23,6 +23,7 @@
 
 </head>
 <body>
+@include('chatbot')
   <!-- Navigation Bar -->
   <nav class="custom-navbar">
     <ul>

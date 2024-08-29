@@ -82,25 +82,22 @@ class UserController extends Controller
     public function login(Request $request){
         
         $request->validate([
-            'email' => 'required|email|exists:users,email',
-            'password' => 'required|string|min:8'
+            'email'=>'required|string|exists:users,email|email',
+            'password'=>'required|min:8',
         ]);
-        dd("test");
-        $user = User::where('email', $request->email)->first();
+        $user=User::where('email',$request->email)->first();
+        if(Hash::check($request->password, $user->password)){
+            $user->up
+        Auth::login($user);
         
-        if ($user && Hash::check($request->password, $user->password)) {
-            Auth::login($user);
-            $user->createToken($user->name)->plainTextToken;
-            return redirect()->route('home');
-        } 
-        return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
-        ]);
+        return redirect()->route('home');
+    }  return back()->withErrors([
+        'email' => 'The provided credentials do not match our records.',
+    ]);
         
 }
     public function logout(){
-        $user=Auth::user();
-        $user->tokens()->delete();
+        Auth::user()->tokens->delete();
         return redirect()->route('login');
     }
 }

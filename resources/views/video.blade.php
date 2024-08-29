@@ -9,6 +9,7 @@
     <link rel="shortcut icon" type="x-icon" href="assest/image/logo.png">
 </head>
 <body>
+    @include('chatbot')
     <!-- Navigation Bar -->
     <nav class="main_box">
         <input type="checkbox" id="check">
@@ -20,6 +21,7 @@
                 <a href="#">Games</a>
             </div>
         </div>
+        
         <div class="sidebar_menu">
             <div class="menu">
                 <ul>
@@ -80,6 +82,7 @@
             Your browser does not support the video tag.
         </video>
     </div>
+
 
 </body>
 </html>

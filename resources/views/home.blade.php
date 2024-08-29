@@ -6,31 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduSpace</title>
 
-    <link rel="stylesheet" href="assest/css/home.css">
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.5/build/spline-viewer.js"></script>
+    <link rel="stylesheet" href="{{asset('assest/css/home.css')}}">
+    <script type="module" src="{{asset('https://unpkg.com/@splinetool/viewer@1.9.5/build/spline-viewer.js')}}"></script>
 </head>
 <body>
-    <div id="chatbot-launcher">
-        <img src="assest/image/bot2.png" alt="Chat" id="chatbot-icon">
-        <span id="chatbot-label">Chat with neptune</span>
-
-    </div>
-
-    <div id="chatbot-container">
-        <div id="chatbot-header">
-            <h2>Chat with neptune</h2>
-            <button id="chatbot-close">&times;</button>
-        </div>
-        <div id="chatbot-messages">
-            <!-- Chat messages will be dynamically added here -->
-        </div>
-        <div id="chatbot-input">
-            <input type="text" id="chatbot-text" placeholder="Type a message...">
-            <button id="chatbot-send">Send</button>
-        </div>
-    </div>
-
-    <script src="assest/js/bot.js"></script>
+    @include('chatbot')
 
    <!-- Navbar Section -->
    <header>
@@ -45,8 +25,7 @@
                 <div class="dropdown-content">
                     <a href="/whyspace" >Why EduSpace</a>
                     <a href="/team" >Team</a>
-
-
+                    <a href="/price" >prices</a>
                 </div>
             </div>
             <a href="/course" >Courses</a>

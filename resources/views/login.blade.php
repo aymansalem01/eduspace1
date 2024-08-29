@@ -11,17 +11,17 @@
 </head>
 <body>
     <div class="wrapper">
-        <form action={{url("login")}} method="post" class="form-box login">
+        <form action={{route("logining")}} method="post" class="form-box login">
         @csrf
             <h1>Login</h1> <!-- Main heading for the login form -->
             <p class="f">Welcome back! Please log in to your account.</p>
 
             <div class="input-box">
-                <input type="email" class="input-box" placeholder="Email" required>
+                <input class="input-box" name="email" id="email" type="email" placeholder="Email" required>
                 <i class='bx bxs-envelope'></i><!-- Icon for email -->
             </div>
             <div class="input-box">
-                <input type="password" class="input-box" placeholder="Password" required>
+                <input type="password" name="password" id="password" class="input-box" placeholder="Password" required>
                 <i class='bx bxs-lock-alt'></i><!-- Icon for password -->
             </div>
             <div class="remember-forget">
