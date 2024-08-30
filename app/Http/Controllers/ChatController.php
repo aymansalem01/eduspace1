@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use GeminiAPI\Client;
 use GeminiAPI\Resources\Parts\TextPart;
+use Illuminate\Support\Env;
 
 class ChatController extends Controller
 {
@@ -19,7 +20,8 @@ class ChatController extends Controller
         $text = $request->input('text');
 
         // Initialize the Gemini client
-        $client = new Client("AIzaSyAiB_XaWi7SqcE2jT17evPTuDLj4a5ihr4");
+        $key = env('API_KEY');
+        $client = new Client($key);
 
         // Generate the response using Gemini API
         $response = $client->geminiPro()->generateContent(
