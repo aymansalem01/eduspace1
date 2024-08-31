@@ -97,8 +97,12 @@ class UserController extends Controller
     ]);
         
 }
-    public function logout(){
-        Auth::user()->tokens()->delete();
-        return redirect()->route('login');
+public function logout(Request $request)
+{
+    $user = $request->user();
+    if (isset($user)) {
+        $user->tokens()->delete();
     }
+    return redirect()->route('login');
+}
 }
