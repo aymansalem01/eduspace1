@@ -12,6 +12,7 @@ Route::get('/course',[PageController::class,'course'])->name('course');
 Route::get('/feedback',[PageController::class,'feedback'])->name('feedback');
 Route::get('/login',[PageController::class,'login'])->name('login');
 Route::post('/login',[UserController::class,'login'])->name('logining');
+Route::post('/logout',[UserController::class,'logout'])->name('logout');
 Route::get('/price',[PageController::class,'price'])->name('price');
 Route::get('/profile',[PageController::class,'profilepage'])->name('profilepage');
 Route::get('/signup',[PageController::class,'signup'])->name('signup');

@@ -86,8 +86,9 @@ class UserController extends Controller
             'password'=>'required|min:8',
         ]);
         $user=User::where('email',$request->email)->first();
+     
         if(Hash::check($request->password, $user->password)){
-        $user->createToken('api-token')->plainTextToken;
+     $user->createToken($user->name)->plainTextToken;
         Auth::login($user);
         
         return redirect()->route('home');
@@ -97,7 +98,7 @@ class UserController extends Controller
         
 }
     public function logout(){
-        Auth::user()->tokens->delete();
+        Auth::user()->tokens()->delete();
         return redirect()->route('login');
     }
 }
