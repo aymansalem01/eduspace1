@@ -4,33 +4,14 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="x-icon" href="assest/image/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>EduSpace</title>
 
     <link rel="stylesheet" href="assest/css/home.css">
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.5/build/spline-viewer.js"></script>
 </head>
 <body dir="rtl">
-    <div id="chatbot-launcher">
-        <img src="assest/image/bot2.png" alt="Chat" id="chatbot-icon">
-        <span id="chatbot-label">تحدث مع نبتون</span>
-
-    </div>
-
-    <div id="chatbot-container">
-        <div id="chatbot-header">
-            <h2>تحدث مع نبتون</h2>
-            <button id="chatbot-close">&times;</button>
-        </div>
-        <div id="chatbot-messages">
-            <!-- Chat messages will be dynamically added here -->
-        </div>
-        <div id="chatbot-input">
-            <input type="text" id="chatbot-text" placeholder="Type a message...">
-            <button id="chatbot-send">ارسال</button>
-        </div>
-    </div>
-
-    <script src="assest/js/bot.js"></script>
+@include('chatbot')
 
    <!-- Navbar Section -->
    <header>
@@ -53,6 +34,7 @@
             {{-- <a href="/profile" >Profile</a> --}}
             <a href="/" >English</a>
             <a href="/login" class="btn">Log In</a>
+            <a href="/logout" class="btn">Log out</a>
         </nav>
     </header>
 
