@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   {{-- <link rel="shortcut Icon" type="x-icon" href= "asset('assest/image/logo.png')"> --}}
   <link rel="shortcut icon" type="x-icon" href={{asset("assest/image/logo.png")}}>
+  <meta name="csrf-token" content="{{ csrf_token() }}">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,12 +18,14 @@
 
   <!-- Custom CSS for additional styles -->
   <link rel="stylesheet" href={{asset('assest/css/course.css')}}>
+  
 
   <!-- Page title -->
   <title>Courses</title>
 
 </head>
 <body dir="rtl">
+  @include('chatbot')
   <!-- Navigation Bar -->
   <nav class="custom-navbar">
     <ul>
