@@ -88,7 +88,7 @@ class UserController extends Controller
         $user=User::where('email',$request->email)->first();
      
         if(Hash::check($request->password, $user->password)){
-     $user->createToken($user->name)->plainTextToken;
+            Auth::user()->createToken($user->name)->accessToken;
         Auth::login($user);
         
         return redirect()->route('home');
@@ -99,10 +99,9 @@ class UserController extends Controller
 }
 public function logout(Request $request)
 {
-    $user = $request->user();
-    if (isset($user)) {
-        $user->tokens()->delete();
-    }
+    Auth::user()->tokens->each(function($token, $key) {
+        $token->delete();
+    });
     return redirect()->route('login');
 }
 }
