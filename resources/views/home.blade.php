@@ -33,12 +33,18 @@
             <a href="/feedback" >Feedback</a>
             {{-- <a href="/profile" >Profile</a> --}}
             <a href="/ar">عربي</a>
+            @if(Auth::check())
+           <li>
             <form action={{ route('logout') }} method="POST">
                 @csrf
                 <button type="submit" class="btn">Log Out</button>
             </form>
+            </li>
+        @else
+        <li>
             <a href="/login" class="btn">Log In</a>
-            
+        </li>
+        @endif
             
         </nav>
     </header>
