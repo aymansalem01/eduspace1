@@ -33,8 +33,18 @@
             <a href="/ar/feedback" >اقتراحات</a>
             {{-- <a href="/profile" >Profile</a> --}}
             <a href="/" >English</a>
-            <a href="/login" class="btn">Log In</a>
-            <a href="/logout" class="btn">Log out</a>
+            @if(Auth::check())
+           <li>
+            <form action={{ route('logout') }} method="POST">
+                @csrf
+                <button type="submit" class="btn">تسجيل خروج</button>
+            </form>
+            </li>
+        @else
+        <li>
+            <a href="/login" class="btn">تسجيل دخول</a>
+        </li>
+        @endif
         </nav>
     </header>
 

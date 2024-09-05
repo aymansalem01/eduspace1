@@ -1,3 +1,11 @@
+// Ensure the chatbot container is hidden when the page loads
+window.addEventListener('load', function() {
+    let chatbotContainer = document.getElementById("chatbot-container");
+    if (chatbotContainer) {
+        chatbotContainer.style.display = "none";
+    }
+});
+
 document.getElementById("chatbot-launcher").addEventListener("click", function() {
     let chatbotContainer = document.getElementById("chatbot-container");
     if (chatbotContainer.style.display === "none" || chatbotContainer.style.display === "") {
@@ -32,16 +40,21 @@ function addMessage(sender, text) {
     messages.scrollTop = messages.scrollHeight;
 }
 
+// Optional: You can include your style directly in a <style> tag or external stylesheet
 document.write(`
 <style>
     .user-message { text-align: right; margin: 5px 0; }
     .bot-message { text-align: left; margin: 5px 0; }
 </style>
 `);
+
+// Navigation toggle
 const navToggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('nav');
 
-navToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-    navToggle.classList.toggle('active');
-});
+if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        navToggle.classList.toggle('active');
+    });
+}

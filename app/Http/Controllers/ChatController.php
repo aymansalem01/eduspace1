@@ -11,7 +11,7 @@ class ChatController extends Controller
 {
     public function handleMessage(Request $request)
     {
-        // Validate request data
+       
         $request->validate([
             'text' => 'required|string',
         ]);
@@ -28,10 +28,8 @@ class ChatController extends Controller
             new TextPart("Give me a concise answer in 2 lines max about: " . $text)
         );
 
-        // Extract text from the response
         $responseText = $response->text();
 
-        // Return the response as plain text
         return response($responseText);
     }
 }

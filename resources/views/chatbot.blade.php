@@ -40,7 +40,7 @@
         var text = document.getElementById("text").value;
         var response = document.getElementById("response");
 
-        fetch("/chat", { // Update with the correct route
+        fetch("/chat", { 
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
