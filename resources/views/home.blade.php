@@ -41,9 +41,7 @@
             </form>
             </li>
         @else
-        <li>
             <a href="/login" class="btn">Log In</a>
-        </li>
         @endif
             
         </nav>
@@ -104,7 +102,7 @@
                 <div class="footerNav">
                     <ul>
                         <li><a href="">Home</a></li>
-                        <li><a href="">News</a></li>
+                        <li><a href="https://www.instagram.com/eduspaceteam/?utm_source=ig_web_button_share_sheet">News</a></li>
                         <li><a href="/whyspace">About</a></li>
                         <li><a href="https://www.instagram.com/eduspaceteam/?utm_source=ig_web_button_share_sheet">Contact Us</a></li>
                         <li><a href="/team">Our Team</a></li>

@@ -41,9 +41,7 @@
             </form>
             </li>
         @else
-        <li>
             <a href="/login" class="btn">تسجيل دخول</a>
-        </li>
         @endif
         </nav>
     </header>
@@ -103,8 +101,9 @@
                 <div class="footerNav">
                     <ul>
                         <li><a href="ar">الرئيسية</a></li>
+                        <li><a href="https://www.instagram.com/eduspaceteam/?utm_source=ig_web_button_share_sheet">اخر الاخبار</a></li>
                         <li><a href="/whyspace">عنا</a></li>
-                        <li><a href="">Contact Us</a></li>
+                        <li><a href="https://www.instagram.com/eduspaceteam/?utm_source=ig_web_button_share_sheet">تواصل معنا</a></li>
                         <li><a href="/team">Our Team</a></li>
                     </ul>
                 </div>
