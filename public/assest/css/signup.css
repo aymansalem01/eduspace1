@@ -69,7 +69,6 @@ body {
     padding: 0 38px 0 15px; /* Padding inside input */
     outline: none;
 }
-
 /* Styling for input placeholders */
 .input-box input::placeholder {
     color: #ffffff;
@@ -84,7 +83,6 @@ body {
     font-size: 20px;
     color: #ffffff;
 }
-
 /* Styling for the register button */
 .wrapper .btn {
     width: 100%;
@@ -131,3 +129,4 @@ body {
     border-radius: 50%;
     z-index: -1;
 }
+

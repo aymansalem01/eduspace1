@@ -19,22 +19,37 @@
                 <div class="input-box">
                     <input type="text" name="Username"  placeholder="Username" required>
                     <i class='bx bxs-user'></i><!-- Icon for username -->
+                    @error('Username')
+                        {{$message}}
+                    @enderror
                 </div>
+
                 <div class="input-box">
-                    <label for="email"></label><br>
+                    <label for="email"></label>
                     <input type="email" id="email" name="email" placeholder="Email" required>
                     <i class='bx bxs-envelope'></i><!-- Icon for email -->
+                    @error('email')
+                        {{$message}}
+                    @enderror
                 </div>
             </div>
 
             <div class="input-box">
                 <input type="password" name="password" placeholder="Password" required>
                 <i class='bx bxs-lock-alt'></i><!-- Icon for password -->
+                @error('password')
+                    {{$message}}
+                @enderror
             </div>
+
             <div class="input-box">
                 <input type="password" name="confirm_password" placeholder="Confirm Password" required>
                 <i class='bx bxs-lock-alt'></i><!-- Icon for confirm password -->
+                @error('confirm_password')
+                    {{$message}}
+                @enderror
             </div>
+
             <button type="submit" class="btn">Register</button><!-- Register button -->
             <div class="login-link">
                 <p>Already have an account? <a href="/login" class="login-toggle">Login</a></p> <!-- Login link -->

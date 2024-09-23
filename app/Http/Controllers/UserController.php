@@ -31,6 +31,12 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'Username' => 'required|max:255',
+            'email' => 'required|unique:users|max:255',
+            'password'  => 'required|min:8',
+        ]);
+
        $user =new user();
        $user->name= $request->input('Username');
        $user->email= $request->input('email');
@@ -39,7 +45,7 @@ class UserController extends Controller
        }
        else{
         return back()->withErrors([
-            'password' => 'password not match.',
+            'confirm_password' => 'password not match.',
         ]);
 
        }
@@ -92,8 +98,9 @@ class UserController extends Controller
         Auth::login($user);
         
         return redirect()->route('home');
-    }  return back()->withErrors([
-        'email' => 'The provided credentials do not match our records.',
+    } 
+     return back()->withErrors([
+        'password' => "The email or password is incorrect",
     ]);
         
 }

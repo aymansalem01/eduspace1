@@ -19,15 +19,24 @@
             <div class="input-box">
                 <input class="input-box" name="email" id="email" type="email" placeholder="Email" required>
                 <i class='bx bxs-envelope'></i><!-- Icon for email -->
+                @error('email')
+                {{$message}}
+                @enderror
             </div>
+
             <div class="input-box">
                 <input type="password" name="password" id="password" class="input-box" placeholder="Password" required>
                 <i class='bx bxs-lock-alt'></i><!-- Icon for password -->
+                @error('password')
+                    {{$message}}
+                @enderror
             </div>
+
             <div class="remember-forget">
                 <label><input type="checkbox"> Remember me</label><!-- Checkbox for remember me -->
                 <a href="#">Forgot Password?</a><!-- Forgot password link -->
             </div>
+
             <button type="submit" class="btn">login</button><!-- Login button -->
 
             <div class="register-link">
