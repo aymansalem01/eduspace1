@@ -33,17 +33,16 @@
             <a href="/feedback" >Feedback</a>
             {{-- <a href="/profile" >Profile</a> --}}
             <a href="/ar">عربي</a>
-            @if(Auth::check())
-           <li>
-            <form action={{ route('logout') }} method="POST">
-                @csrf
-                <button type="submit" class="btn">Log Out</button>
-            </form>
+            <li style="display: inline;">
+                @if(Auth::check())
+                    <form action="{{ route('logout') }}" method="POST" style="display:inline;">
+                        @csrf
+                        <button type="submit" class="btn" style="background: none; border: none; color: inherit; cursor: pointer;">Log Out</button>
+                    </form>
+                @else
+                    <a href="/login" class="btn">Log In</a>
+                @endif
             </li>
-        @else
-            <a href="/login" class="btn">Log In</a>
-        @endif
-            
         </nav>
     </header>
 
@@ -112,8 +111,8 @@
                 <!-- Email Subscription Box -->
                 <div class="emailSubscription">
                     <h4>enter your Email so we could get in touch with you</h4>
-                    <form action="#" method="post">
-                        <input type="email" name="email" placeholder="Enter your email" required>
+                    <form action={{route('subscribe')}} method="get">
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
                         <button type="submit">Subscribe</button>
                     </form>
                 </div>

@@ -236,6 +236,9 @@ span {
     cursor: pointer;
     margin-top: 25px;
 }
+li {
+    display: inline;
+}
 
 .btn:hover {
     transform: scale3d(1.03);

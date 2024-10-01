@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Spatie\Color\Validate;
 
 class UserController extends Controller
 {
@@ -94,7 +95,7 @@ class UserController extends Controller
         $user=User::where('email',$request->email)->first();
      
         if(Hash::check($request->password, $user->password)){
-            Auth::user()->createToken($user->name)->accessToken;
+            $user->createToken($user->email)->accessToken;
         Auth::login($user);
         
         return redirect()->route('home');
@@ -110,5 +111,15 @@ public function logout(Request $request)
         $token->delete();
     });
     return redirect()->route('login');
+}
+
+public function subscribe(Request $request){
+
+    $request->validate([
+       'email'=>'required|string|exists:users,email|email',
+    ]);
+    $user=User::where('email',$request->email)->first();
+    $user->is_done=true;
+   return redirect()->route('home');
 }
 }

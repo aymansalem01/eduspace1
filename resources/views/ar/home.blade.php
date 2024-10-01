@@ -26,23 +26,24 @@
                 <div class="dropdown-content">
                     <a href="/ar/whyspace" >لماذا نحن</a>
                     <a href="/ar/team" >الفريق</a>
+                    <a href="/price" >الاسعار</a>
 
                 </div>
             </div>
-            <a href="/ar/course" >كورساتنا</a>
+            <a href="/ar/course" >دوراتنا</a>
             <a href="/ar/feedback" >اقتراحات</a>
             {{-- <a href="/profile" >Profile</a> --}}
             <a href="/" >English</a>
-            @if(Auth::check())
-           <li>
-            <form action={{ route('logout') }} method="POST">
-                @csrf
-                <button type="submit" class="btn">تسجيل خروج</button>
-            </form>
+            <li style="display: inline;">
+                @if(Auth::check())
+                    <form action="{{ route('logout') }}" method="POST" style="display:inline;">
+                        @csrf
+                        <button type="submit" class="btn" >ستجيل خروج</button>
+                    </form>
+                @else
+                    <a href="/login" class="btn">تسجيل دخول</a>
+                @endif
             </li>
-        @else
-            <a href="/login" class="btn">تسجيل دخول</a>
-        @endif
         </nav>
     </header>
 
@@ -111,8 +112,8 @@
                 <!-- Email Subscription Box -->
                 <div class="emailSubscription">
                     <h4>أدخل بريدك الإلكتروني حتى نتمكن من التواصل معك.</h4>
-                    <form action="#" method="post">
-                        <input type="email" name="email" placeholder="Enter your email" required>
+                    <form action={{route("subscribe")}} method="post">
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
                         <button type="submit">اشترك</button>
                     </form>
                 </div>

@@ -13,20 +13,20 @@
         <!-- Feedback Form Section -->
         <div class="wrapper">
             <form action="" class="form-box feedback">
-                <h1>Feedback</h1> <!-- Main heading for the feedback form -->
-                <p class="f">We value your feedback! Please share your thoughts with us.</p>
+                <h1>ملاحظتكم</h1> <!-- Main heading for the feedback form -->
+                <p class="f">نحن نقدر ملاحظاتك! يرجى مشاركة أفكارك معنا.</p>
 
                 <div class="input-box">
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" name="email" placeholder="حسابك" required>
                     <i class='bx bxs-envelope'></i><!-- Icon for email -->
                 </div>
 
                 <div class="input-box">
-                    <textarea placeholder="Write your feedback here..." required></textarea>
+                    <textarea placeholder="اكتب اقتراحك هنا ..." required></textarea>
                     <i class='bx bxs-message-square-detail'></i><!-- Icon for feedback -->
                 </div>
 
-                <button type="submit" class="btn">Submit Feedback</button><!-- Feedback submit button -->
+                <button type="submit" class="btn">تسليم الملاحظة</button><!-- Feedback submit button -->
             </form>
         </div>
         <script src={{asset('assest/js/feedback.js')}}></script>

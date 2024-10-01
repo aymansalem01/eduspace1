@@ -20,6 +20,7 @@ Route::post('/store',[UserController::class,'store'])->name('storeUser');
 Route::get('/team',[PageController::class,'team'])->name('team');
 Route::get('/video',[PageController::class,'video'])->name('video');
 Route::get('/whyspace',[PageController::class,'whySpace'])->name('whySpace');
+Route::get('/subscribe',[UserController::class,'subscribe'])->name('subscribe');
 
 
 Route::get('/ar',[PageController::class,'indexAr'])->name('homeAr');

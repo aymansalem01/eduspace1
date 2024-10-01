@@ -104,6 +104,34 @@ body {
   }
 
  /* Chatbot container hidden initially */
+ #chatbot-launcher {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000; 
+
+}
+
+#chatbot-icon {
+    width: 160px;
+    height: 160px;
+}
+#chatbot-label {
+    position: absolute;
+    bottom: 5px; /* Adjust position as needed */
+    right: 80px; /* Adjust position as needed */
+    font-size: 12px; /* Adjust font size as needed */
+    color: #FFF9C1; /* Adjust color as needed */
+
+  }
+
+ /* Chatbot container hidden initially */
  #chatbot-container {
     width: 300px;
     max-height: 400px;

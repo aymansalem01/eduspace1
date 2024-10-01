@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   {{-- <link rel="shortcut Icon" type="x-icon" href= "asset('assest/image/logo.png')"> --}}
   <link rel="shortcut icon" type="x-icon" href={{asset("assest/image/logo.png")}}>
-  <meta name="csrf-token" content="{{ csrf_token() }}">
+  
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,7 @@
 
   <!-- Page title -->
   <title>Courses</title>
-
+  <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body dir="rtl">
   @include('chatbot')

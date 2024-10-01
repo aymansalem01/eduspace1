@@ -1,5 +1,5 @@
 <div id="chatbot-launcher">
-    <img src="assest/image/bot2.png" alt="Chat" id="chatbot-icon" onclick="toggleChat()">
+    <img src={{asset("assest/image/bot2.png")}} alt="Chat" id="chatbot-icon" onclick="toggleChat()">
     <span id="chatbot-label">Chat with Neptune</span>
 </div>
 
