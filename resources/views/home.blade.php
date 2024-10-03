@@ -110,12 +110,22 @@
 
                 <!-- Email Subscription Box -->
                 <div class="emailSubscription">
+                    
                     <h4>enter your Email so we could get in touch with you</h4>
-                    <form action={{route('subscribe')}} method="get">
+                    <form action={{url("subscribes")}} method="post">
+                        @csrf
                         <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                        @error('email')
+                        {{$message}}
+                        @enderror
                         <button type="submit">Subscribe</button>
                     </form>
                 </div>
+                @if (session('success'))
+                <div class="alert alert-success">
+               {{ session('success') }}
+                </div>
+                @endif
                 <div class="divider"></div>
 
                 <div class="footerBottom">

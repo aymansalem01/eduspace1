@@ -112,11 +112,20 @@
                 <!-- Email Subscription Box -->
                 <div class="emailSubscription">
                     <h4>أدخل بريدك الإلكتروني حتى نتمكن من التواصل معك.</h4>
-                    <form action={{route("subscribe")}} method="post">
+                    <form action={{url("subscribes")}} method="post">
+                        @csrf
                         <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                        @error('email')
+                        {{$message}}
+                        @enderror
                         <button type="submit">اشترك</button>
                     </form>
                 </div>
+                @if (session('success'))
+                <div class="alert alert-success">
+               {{ session('success') }}
+                </div>
+                @endif
                 <div class="divider"></div>
 
                 <div class="footerBottom">

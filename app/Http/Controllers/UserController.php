@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Feedback;
+use App\Models\Subscribes;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\User;
@@ -117,11 +118,12 @@ public function logout(Request $request)
 public function subscribe(Request $request){
 
     $request->validate([
-       'email'=>'required|string|exists:users,email|email',
+       'email'=>'required|email',
     ]);
-    $user=User::where('email',$request->email)->first();
-    $user->is_done=true;
-   return redirect()->route('home');
+     $subscribe= new Subscribes();
+     $subscribe->email=$request->email;
+     $subscribe->save();
+     return redirect()->back()->with('success', 'Thank you for subscription');
 }
 
 }
