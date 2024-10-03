@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Feedback;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\User;
@@ -122,4 +123,5 @@ public function subscribe(Request $request){
     $user->is_done=true;
    return redirect()->route('home');
 }
+
 }

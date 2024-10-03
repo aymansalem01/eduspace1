@@ -12,23 +12,37 @@
 <body>
         <!-- Feedback Form Section -->
         <div class="wrapper">
-            <form action="" class="form-box feedback">
+            <form action={{url("storefeed")}}  method="post" class="form-box feedback">
+                @csrf
                 <h1>Feedback</h1> <!-- Main heading for the feedback form -->
                 <p class="f">We value your feedback! Please share your thoughts with us.</p>
 
                 <div class="input-box">
-                    <input type="email" placeholder="Email" required>
+                    <input name="email" id="email" type="email" placeholder="Email" required>
                     <i class='bx bxs-envelope'></i><!-- Icon for email -->
+                    @error('email')
+                    {{$message}}
+                @enderror
                 </div>
 
                 <div class="input-box">
-                    <textarea placeholder="Write your feedback here..." required></textarea>
+                    {{-- <input  name="feedback"  type="text"  placeholder="Write your feedback here..."  required> --}}
+                    <textarea  name="feedback"  type="text" placeholder="Write your feedback here..." required></textarea>
                     <i class='bx bxs-message-square-detail'></i><!-- Icon for feedback -->
+                    @error('feedback')
+                    {{$message}}
+                    @enderror
                 </div>
 
                 <button type="submit" class="btn">Submit Feedback</button><!-- Feedback submit button -->
+                @if (session('success'))
+                <div class="alert alert-success">
+               {{ session('success') }}
+                </div>
+                @endif
             </form>
         </div>
+       
         <script src={{asset('assest/js/feedback.js')}}></script>
 
 </body>
