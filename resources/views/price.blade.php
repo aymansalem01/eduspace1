@@ -27,7 +27,7 @@
                 <h2>Basic Features</h2>
                 <h1>$19 <span>/month</span></h1>
                 <ul>
-                    <li>🕹️ Subject with Game</li> <!-- Feature included in Basic plan -->
+                    <li>🕹️ Subject with Games</li> <!-- Feature included in Basic plan -->
                 </ul>
                 <div class="btn-container">
                     <div class="btn">Add to Cart</div> <!-- Button to add the Basic plan to cart -->
@@ -38,8 +38,8 @@
                 <h2>Standard</h2>
                 <h1>$22 <span>/month</span></h1>
                 <ul>
-                    <li>🕹️ Subject with Game</li> <!-- Feature included in Standard plan -->
-                    <li>🔬 Interactive Lab</li> <!-- Additional feature for Standard plan -->
+                    <li>🕹️ Subject with Games</li> <!-- Feature included in Standard plan -->
+                    <li>🔬 3D sinteractive simulations</li> <!-- Additional feature for Standard plan -->
                 </ul>
                 <div class="btn-container">
                     <div class="btn">Add to Cart</div> <!-- Button to add the Standard plan to cart -->
@@ -50,8 +50,8 @@
                 <h2>Premium</h2>
                 <h1>$25 <span>/month</span></h1>
                 <ul>
-                    <li>🕹️ Subject with Game</li> <!-- Feature included in Premium plan -->
-                    <li>🔬 Interactive Lab</li> <!-- Additional feature for Premium plan -->
+                    <li>🕹️ Subject with Games</li> <!-- Feature included in Premium plan -->
+                    <li>🔬 3D sinteractive simulations</li> <!-- Additional feature for Premium plan -->
                     <li>🏛️ VR Lab</li> <!-- Additional feature for Premium plan -->
                 </ul>
                 <div class="btn-container">
@@ -59,7 +59,7 @@
                 </div>
             </div>
             <!-- All-Inclusive Plan -->
-            <div class="box">
+            {{-- <div class="box">
                 <h2>All-Inclusive</h2>
                 <h1>$30 <span>/month</span></h1>
                 <ul>
@@ -71,7 +71,7 @@
                 <div class="btn-container">
                     <div class="btn">Add Course</div> <!-- Button to add the All-Inclusive plan to cart -->
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </body>

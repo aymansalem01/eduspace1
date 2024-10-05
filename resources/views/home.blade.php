@@ -85,7 +85,7 @@
    <!-- Promo Video Section -->
    <section class="video-text-section">
     <div class="video-container">
-        <iframe src="https://youtu.be/TizH0dsxW08" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/TizH0dsxW08" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="text-container">
         <h2>Explore New Possibilities with EduSpace!</h2>
