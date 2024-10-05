@@ -85,11 +85,11 @@
    <!-- Promo Video Section -->
    <section class="video-text-section">
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/TizH0dsxW08" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Nm2SmcQiEDU?si=DdG2RsToZTbQs-ap"  frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="text-container">
         <h2>Explore New Possibilities with EduSpace!</h2>
-        <p>TStep into virtual reality labs for not just science, but also medicine, engineering, and more. With EduSpace, you can experience realistic experiments and simulations from anywhere. Our VR technology makes learning fun, accessible, and practical for all subjects. Start your 360-degree learning journey today!"</p>
+        <p>Step into virtual reality labs for not just science, but also medicine, engineering, and more. With EduSpace, you can experience realistic experiments and simulations from anywhere. Our VR technology makes learning fun, accessible, and practical for all subjects. Start your 360-degree learning journey today!</p>
     </div>
 </section>
 
@@ -103,7 +103,7 @@
                         <li><a href="">Home</a></li>
                         <li><a href="https://www.instagram.com/eduspaceteam/?utm_source=ig_web_button_share_sheet">News</a></li>
                         <li><a href="/whyspace">About</a></li>
-                        <li><a href="https://www.instagram.com/eduspaceteam/?utm_source=ig_web_button_share_sheet">Contact Us</a></li>
+                        <li><a href="/feedback">Contact Us</a></li>
                         <li><a href="/team">Our Team</a></li>
                     </ul>
                 </div>

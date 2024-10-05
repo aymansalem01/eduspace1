@@ -53,9 +53,9 @@ body {
 
 /* Paragraph in the description */
 .description p {
-    font-size: 1.5em; /* Slightly larger font size for the paragraph */
-    line-height: 1.6; /* Line height for readability */
-    animation: fadeInUp 2s ease-in-out; /* Animation for fading in and moving up */
+    font-size: 1em; /* Slightly larger font size for the paragraph */
+    line-height: 1.5; /* Line height for readability */
+    animation: slideInLeft 2s ease-in-out; /* Animation for fading in and moving up */
 }
 
 /* Container styling for sections */

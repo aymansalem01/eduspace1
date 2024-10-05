@@ -86,7 +86,7 @@
    <!-- Promo Video Section -->
    <section class="video-text-section">
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/TizH0dsxW08" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Nm2SmcQiEDU?si=DdG2RsToZTbQs-ap"  frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="text-container">
         <h2>استكشف عالماً جديداً من الفرص مع EduSpace!</h2>
@@ -104,7 +104,7 @@
                         <li><a href="ar">الرئيسية</a></li>
                         <li><a href="https://www.instagram.com/eduspaceteam/?utm_source=ig_web_button_share_sheet">اخر الاخبار</a></li>
                         <li><a href="/whyspace">عنا</a></li>
-                        <li><a href="https://www.instagram.com/eduspaceteam/?utm_source=ig_web_button_share_sheet">تواصل معنا</a></li>
+                        <li><a href="/ar/feedback">تواصل معنا</a></li>
                         <li><a href="/team">فريقنا</a></li>
                     </ul>
                 </div>

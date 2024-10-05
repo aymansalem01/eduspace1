@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="x-icon" href="assest/image/logo.png">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
-<body>
+<body >
     @include('chatbot')
     <!-- Navigation Bar -->
     <nav class="main_box">
@@ -19,7 +19,7 @@
                 <i class="fas fa-bars"></i>
             </label>
             <div class="menu-icon-text">
-                <a href="#">Games</a>
+                <a href="#">الالعاب</a>
             </div>
         </div>
         
@@ -28,11 +28,12 @@
                 <ul>
                     <li>
                         <i class="fas fa-trophy"></i>
-                        <a href="#">Games</a>
+                        <a href="#">الالعاب</a>
                         <ul class="dropdown">
-                            <li><a href="https://learn-2b.github.io/Electron-Distribution-Game/">Level(1)</a></li>
-                            <li><a href="https://learn-2b.github.io/Electron--Configuration/">Level(2)</a></li>
-                            <li><a href="https://learn-2b.github.io/GuessAtom/">Level(3)</a></li>
+                            <li><a href="https://learn-2b.github.io/Electron--Configuration/">المستوى(1)</a></li>
+                            <li><a href="https://learn-2b.github.io/Electron-Distribution-Game/">المستوى(2)</a></li>
+                            <li><a href="https://learn-2b.github.io/GuessAtom/">المستوى(3)</a></li>
+                            {{-- <li><a href="https://learn-2b.github.io/GuessAtom/">المستوى(4)</a></li> --}}
                         </ul>
                     </li>
                 </ul>
@@ -52,23 +53,23 @@
 
     <!-- Welcome Message -->
     <div class="welcome">
-        <h1>Welcome to EduSpace Course</h1>
-        <p>Watch videos to unlock games</p>
+        <h1>EduSpace مرحبا بكم في دروس</h1>
+        <p>شاهد الدروس واستمتع بالالعاب التفاعلية  </p>
     </div>
 
     <!-- Video Courses Section -->
     <div class="video-container">
         <div class="video-box" onclick="playVideo('{{ asset('assest/video1.mp4') }}')">
-            <img src="{{ asset('assest/image/biocourse.jpg') }}" alt="Video 1">
-            <h3>Introduction to Chemistry</h3>
+            <img src="{{ asset('assest/image/im1.jpg') }}" alt="Video 1">
+            <h3>التوزيع الالكتروني ( مبدأ أوفباو)</h3>
         </div>
         <div class="video-box" onclick="playVideo('{{ asset('assest/video2.mp4') }}')">
-            <img src="{{ asset('assest/image/chemcourse.jpg') }}" alt="Video 2">
-            <h3>Chemistry Basics</h3>
+            <img src="{{ asset('assest/image/im2.jpg') }}" alt="Video 2">
+            <h3>التوزيع الالكتروني (المدارات)</h3>
         </div>
         <div class="video-box" onclick="playVideo('{{ asset('assest/video3.mp4') }}')">
-            <img src="{{ asset('assest/image/advchemcourse.jpg') }}" alt="Video 3">
-            <h3>Advanced Chemistry</h3>
+            <img src="{{ asset('assest/image/im3.jpg') }}" alt="Video 3">
+            <h3>التفاعلات الكيميائية</h3>
         </div>
     </div>
     

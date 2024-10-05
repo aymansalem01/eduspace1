@@ -39,7 +39,7 @@
                 <h1>$22 <span>/month</span></h1>
                 <ul>
                     <li>🕹️ Subject with Games</li> <!-- Feature included in Standard plan -->
-                    <li>🔬 3D sinteractive simulations</li> <!-- Additional feature for Standard plan -->
+                    <li>🔬 3D interactive simulations</li> <!-- Additional feature for Standard plan -->
                 </ul>
                 <div class="btn-container">
                     <div class="btn">Add to Cart</div> <!-- Button to add the Standard plan to cart -->
@@ -51,7 +51,7 @@
                 <h1>$25 <span>/month</span></h1>
                 <ul>
                     <li>🕹️ Subject with Games</li> <!-- Feature included in Premium plan -->
-                    <li>🔬 3D sinteractive simulations</li> <!-- Additional feature for Premium plan -->
+                    <li>🔬 3D interactive simulations</li> <!-- Additional feature for Premium plan -->
                     <li>🏛️ VR Lab</li> <!-- Additional feature for Premium plan -->
                 </ul>
                 <div class="btn-container">
