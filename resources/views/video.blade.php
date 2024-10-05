@@ -58,32 +58,27 @@
 
     <!-- Video Courses Section -->
     <div class="video-container">
-        <div class="video-box" onclick="playVideo('video1.mp4')">
-            <img src="assets/image/biocourse.jpg" alt="Video 1">
+        <div class="video-box" onclick="playVideo('{{ asset('assest/video1.mp4') }}')">
+            <img src="{{ asset('assest/image/biocourse.jpg') }}" alt="Video 1">
             <h3>Introduction to Chemistry</h3>
         </div>
-        <div class="video-box" onclick="playVideo('video2.mp4')">
-            <img src="assets/image/chemcourse.jpg" alt="Video 2">
+        <div class="video-box" onclick="playVideo('{{ asset('assest/video2.mp4') }}')">
+            <img src="{{ asset('assest/image/chemcourse.jpg') }}" alt="Video 2">
             <h3>Chemistry Basics</h3>
         </div>
-        <div class="video-box" onclick="playVideo('video3.mp4')">
-            <img src="assets/image/advchemcourse.jpg" alt="Video 3">
+        <div class="video-box" onclick="playVideo('{{ asset('assest/video3.mp4') }}')">
+            <img src="{{ asset('assest/image/advchemcourse.jpg') }}" alt="Video 3">
             <h3>Advanced Chemistry</h3>
         </div>
-        <div class="video-box" onclick="playVideo('video4.mp4')">
-            <img src="assets/image/orgchemcourse.jpg" alt="Video 4">
-            <h3>Organic Chemistry</h3>
-        </div>
     </div>
-
+    
     <!-- Video Player Section -->
     <div class="video-player">
         <video id="video" controls>
-            <source src="assets/videos/video1.mp4" type="video/mp4">
+            <source src="{{ asset('assest/video1.mp4') }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
-
-
+    <script src="{{ asset('assest/js/video.js') }}"></script>
 </body>
 </html>
