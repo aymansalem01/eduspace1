@@ -86,11 +86,11 @@
    <!-- Promo Video Section -->
    <section class="video-text-section">
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/KLOcj5qvOio" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://youtu.be/TizH0dsxW08" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="text-container">
-        <h2>شاهد فيديو العرض الترويجي الخاص بنا.</h2>
-        <p>يُبرز هذا الفيديو الميزات والإمكانيات المثيرة لـ EduSpace، بما في ذلك مختبرات الواقع الافتراضي المتطورة، والمحاكاة التفاعلية، والمزيد. انغمس في التجربة لترى كيف نجعل التعليم ينبض بالحياة!</p>
+        <h2>استكشف عالماً جديداً من الفرص مع EduSpace!</h2>
+        <p> جرب مختبرات الواقع الافتراضي ليس فقط للعلوم، بل أيضاً للطب، الهندسة، وغيرها. مع EduSpace، يمكنك القيام بتجارب واقعية ومحاكاة في أي مكان. تكنولوجيا الواقع الافتراضي لدينا تجعل التعلم ممتعاً، سهل الوصول، وعملياً في جميع المواد. ابدأ  </p>
     </div>
 </section>
 

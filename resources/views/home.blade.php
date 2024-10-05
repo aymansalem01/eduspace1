@@ -85,11 +85,11 @@
    <!-- Promo Video Section -->
    <section class="video-text-section">
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/KLOcj5qvOio" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://youtu.be/TizH0dsxW08" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="text-container">
-        <h2>Watch Our Promo Video</h2>
-        <p>This video showcases the exciting features and capabilities of EduSpace, including our cutting-edge VR labs, interactive simulations, and more. Dive in to see how we bring education to life!</p>
+        <h2>Explore New Possibilities with EduSpace!</h2>
+        <p>TStep into virtual reality labs for not just science, but also medicine, engineering, and more. With EduSpace, you can experience realistic experiments and simulations from anywhere. Our VR technology makes learning fun, accessible, and practical for all subjects. Start your 360-degree learning journey today!"</p>
     </div>
 </section>
 
